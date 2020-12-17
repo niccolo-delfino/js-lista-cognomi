@@ -7,10 +7,15 @@
 var chiediCognome = prompt('Inserisci qui il tuo cognome');
 console.log(chiediCognome);
 
+// rendo la prima lettera maiuscola
+var cognomeMaiu = chiediCognome.charAt(0).toUpperCase();
+var cognomeMinu = chiediCognome.slice(1).toLowerCase();
+var cognomeCompleto = cognomeMaiu + cognomeMinu;
+
 // creo array
 var cognomi = ['Bianchi', 'Rossi', 'Duzioni', 'Balsano', 'Verdi'];
 console.log(cognomi);
 
 // inserico il cognome del prompt nell'array
-cognomi.push(chiediCognome);
+cognomi.push(cognomeCompleto);
 console.log(cognomi);
