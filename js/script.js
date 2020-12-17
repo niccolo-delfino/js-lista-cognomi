@@ -19,3 +19,11 @@ console.log(cognomi);
 // inserico il cognome del prompt nell'array
 cognomi.push(cognomeCompleto);
 console.log(cognomi);
+
+// rendo l'array in ordine alfabetico
+cognomi.sort();
+console.log(cognomi);
+
+// indico la posizione
+var posizione = cognomi.indexOf(cognomeCompleto) + 1;
+console.log(posizione);
